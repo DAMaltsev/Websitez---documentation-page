@@ -49,6 +49,19 @@
 
     <style>
     .navbar-vertical.navbar-expand-xl+.content { margin-right: 0; }
+/* CUSTOM CSS */
+@media(max-width: 767px) {
+ .table {
+    width: auto;
+    display: block;
+    overflow-x: scroll;
+ }
+}
+
+
+
+/* END CUSTOM CSS */
+
     </style>
   </head>
 
@@ -553,6 +566,7 @@
                       <h5>Create An Auto Assignment</h5>
                       <p>Programmatically create an auto assignment. The concept of the "and" "or" is similar to how it is treated in SQL. If two items have an "and" condition between them, both must match. If the condition is "or", only one of the two has to match. If "and" condition is chained, all conditions must match.</p>
                       <p class="mt-2"><span class="badge bg-primary">POST</span><code>/v1/auto_assignments</code></p>
+                      <div class="table_container">
                       <table class="table table-sm">
                         <thead>
                           <tr>
